@@ -9,7 +9,7 @@ import cesium from 'vite-plugin-cesium'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: './',
+  base: process.env.BASE_PATH || './',
   build: {
     // outDir: './docs',
     rollupOptions: {
@@ -33,7 +33,7 @@ export default defineConfig({
     cesium(),
     vueJsx(),
     stylelintPlugin({ fix: true }),
-    visualizer({ open: true }),
+    visualizer({ open: !process.env.CI }),
     viteImagemin({
       gifsicle: {
         optimizationLevel: 7,

@@ -8,6 +8,8 @@
 
 > **在线演示**：<https://mf-uav-monitor.vercel.app/#/home>
 >
+> **GitHub Pages**：<https://fengtianxi001.github.io/MF-UavMonitor/>
+>
 > 首次打开需要加载 Cesium 运行时、飞机模型和地图瓦片，资源较多时可能等待较久。若长时间停留在加载状态，请检查网络后刷新页面重试。
 
 | 界面预览 | 界面预览 |
@@ -55,6 +57,16 @@ yarn dev
 yarn build
 yarn preview
 ```
+
+## 部署
+
+推送到 `master` 后，GitHub Actions 会自动构建并发布到 GitHub Pages：
+
+<https://fengtianxi001.github.io/MF-UavMonitor/>
+
+构建产物不会提交到仓库。工作流在 CI 中注入 `BASE_PATH=/MF-UavMonitor/` 以适配项目页子路径，本地构建仍默认使用相对路径 `./`。
+
+如需手动发布，可在 Actions 页面运行 `Deploy to GitHub Pages` 工作流。仓库的 Settings → Pages 需要将 Source 设置为 **GitHub Actions**。
 
 ## 功能介绍
 
