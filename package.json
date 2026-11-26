@@ -21,6 +21,7 @@
     "dayjs": "^1.11.13",
     "echarts": "^5.6.0",
     "leaflet": "^1.9.4",
+    "leaflet-rotate": "0.5.0",
     "lodash-es": "^4.17.21",
     "uuid": "^11.0.3",
     "vue": "^3.3.11",

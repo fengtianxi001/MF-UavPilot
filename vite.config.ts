@@ -24,7 +24,7 @@ export default defineConfig({
               .split('/')[0]
               .toString()
           }
-        }
+        },
       },
     },
   },
@@ -69,9 +69,9 @@ export default defineConfig({
       },
       less: {
         modifyVars: {
-          'border-radius-small': '0px',
-          'border-radius-medium': '0px',
-          'border-radius-large': '0px',
+          'border-radius-small': '2px',
+          'border-radius-medium': '2px',
+          'border-radius-large': '2px',
         },
       },
     },

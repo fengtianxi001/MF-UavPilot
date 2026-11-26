@@ -4106,6 +4106,11 @@ ktx-parse@^1.0.0:
   resolved "https://registry.npmmirror.com/ktx-parse/-/ktx-parse-1.0.0.tgz#61a5eccdf085dbbd44374e2d0073ace9018e0e1a"
   integrity sha512-Z31kVizz4DF/6vo9YiSYVBhuXAfyQy9bGxlW3+mB5OELoZjfXVZQpRoctsx8IEDKxBd6SagXKo7qRvu38i8Jfg==
 
+leaflet-rotate@0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/leaflet-rotate/-/leaflet-rotate-0.5.0.tgz#8ab5b5a2b0f47890f4c91b2073ed3d8d824938d6"
+  integrity sha512-dgIbBgSB7K//rN6IUCKQmgXVHbpjTYO5qeI1QjtS/MsofPy+yf1T8GMe7dkKD+DAAeqGdT501xuPnIgr7KHFuw==
+
 leaflet@^1.9.4:
   version "1.9.4"
   resolved "https://registry.npmmirror.com/leaflet/-/leaflet-1.9.4.tgz#23fae724e282fa25745aff82ca4d394748db7d8d"

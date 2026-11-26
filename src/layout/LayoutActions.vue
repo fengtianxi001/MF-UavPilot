@@ -1,16 +1,34 @@
 <template>
   <div class="layout-actions">
-    <div class="action-item" @click="methods.onTheme">
+    <!-- <div class="action-item" @click="methods.onTheme">
       <i v-show="!isDark" class="mf-icon mf-icon-moon"></i>
       <i v-show="isDark" class="mf-icon mf-icon-sun"></i>
-    </div>
-    <div class="action-item" @click="methods.onGithub">
+    </div> -->
+    <button
+      class="action-item language-action"
+      type="button"
+      :aria-label="message('language')"
+      :title="message('language')"
+      @click="toggleLocale"
+    >
+      {{ locale === 'zh-CN' ? '中' : 'EN' }}
+    </button>
+    <button
+      class="action-item"
+      type="button"
+      :aria-label="message('github')"
+      :title="message('github')"
+      @click="methods.onGithub"
+    >
       <i class="mf-icon mf-icon-github"></i>
-    </div>
+    </button>
   </div>
 </template>
 <script setup lang="ts">
 import { ref } from 'vue'
+import { useI18n } from '@/i18n'
+
+const { locale, message, toggleLocale } = useI18n()
 
 const isDark = ref(false)
 
@@ -69,10 +87,18 @@ const methods = {
     justify-content: center;
     width: 25px;
     height: 25px;
+    padding: 0;
     overflow: hidden;
+    font: inherit;
+    color: inherit;
     cursor: pointer;
+    background: transparent;
     border: 1px solid var(--color-border);
     border-radius: 50%;
+  }
+  .language-action {
+    font-size: 10px;
+    font-weight: 600;
   }
 }
 </style>

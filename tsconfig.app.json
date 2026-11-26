@@ -6,18 +6,13 @@
   //   "src/**/*",
   //   "src/**/*.vue"
   // ],
-  "include": [
-    "src/**/*.ts",
-    "src/**/*.d.ts",
-    "src/**/*.tsx",
-    "src/**/*.vue",
-    "types/**/*"
-  ],
+  "include": ["src/**/*", "types/**/*"],
   "exclude": ["node_modules", "dist", "**/*.js", "docs"],
   // "exclude": ["src/**/__tests__/*"],
   "compilerOptions": {
     "composite": true,
     "noEmit": true,
+    "allowImportingTsExtensions": true,
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]

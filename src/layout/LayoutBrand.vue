@@ -1,9 +1,14 @@
 <template>
   <div class="layout-brand">
     <div class="layout-brand-logo"></div>
-    <div class="layout-brand-title">Uav-Monitor</div>
+    <div class="layout-brand-title">{{ message('brand') }}</div>
   </div>
 </template>
+<script setup lang="ts">
+import { useI18n } from '@/i18n'
+
+const { message } = useI18n()
+</script>
 <style lang="scss" scoped>
 .layout-brand {
   display: flex;
