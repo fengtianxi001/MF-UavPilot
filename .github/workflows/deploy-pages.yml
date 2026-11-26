@@ -36,6 +36,13 @@ jobs:
         env:
           CI: true
 
+      - name: Flatten project-page output
+        run: |
+          if [ -d "dist/${GITHUB_REPOSITORY#*/}" ]; then
+            cp -R "dist/${GITHUB_REPOSITORY#*/}/." dist/
+            rm -rf "dist/${GITHUB_REPOSITORY#*/}"
+          fi
+
       - uses: actions/configure-pages@v5
 
       - uses: actions/upload-pages-artifact@v3

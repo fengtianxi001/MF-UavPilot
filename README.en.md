@@ -8,7 +8,7 @@ The project uses a 3D globe as its stage, combining aircraft attitude, flight pa
 
 > **Live demo**: <https://mf-uav-monitor.vercel.app/#/home>
 >
-> **GitHub Pages**: <https://fengtianxi001.github.io/MF-UavMonitor/>
+> **GitHub Pages**: <https://fengtianxi001.github.io/MF-UavPilot/>
 >
 > The first load pulls the Cesium runtime, aircraft model, and map tiles, so it may take a while. If loading stalls, check your network connection and refresh the page.
 
@@ -62,9 +62,9 @@ yarn preview
 
 Pushing to `master` triggers GitHub Actions to build and publish to GitHub Pages:
 
-<https://fengtianxi001.github.io/MF-UavMonitor/>
+<https://fengtianxi001.github.io/MF-UavPilot/>
 
-Build output is never committed. The workflow injects `BASE_PATH=/MF-UavMonitor/` for the project-page subpath, while local builds keep the relative `./` base.
+Build output is never committed. The workflow injects `BASE_PATH=/MF-UavPilot/` for the project-page subpath, while local builds keep the relative `./` base.
 
 To publish manually, run the `Deploy to GitHub Pages` workflow from the Actions tab. The repository's Settings → Pages must use **GitHub Actions** as the source.
 
