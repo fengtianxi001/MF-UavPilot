@@ -2,7 +2,7 @@ import { computed, reactive } from 'vue'
 
 export type Locale = 'zh-CN' | 'en-US'
 
-const STORAGE_KEY = 'mf-uavmonitor-locale'
+const STORAGE_KEY = 'mf-uavpilot-locale'
 const savedLocale =
   typeof localStorage !== 'undefined'
     ? (localStorage.getItem(STORAGE_KEY) as Locale | null)
@@ -226,7 +226,7 @@ const translations: Record<string, string> = {
 }
 
 const messages = {
-  brand: 'Uav-Monitor',
+  brand: 'UavPilot',
   language: 'English',
   github: '打开 GitHub',
 } as const
